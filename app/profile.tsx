@@ -6,6 +6,7 @@
  import { 
    User, 
    Settings, 
+ }
 @@ .. @@
            <View style={styles.headerContent}>
              <Text style={styles.headerTitle}>Profile</Text>
