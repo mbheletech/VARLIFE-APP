@@ -23,11 +23,4 @@ export default function TrackingScreen() {
             style={styles.map}
           />
         </View>
-
-  mapContainer: {
-    height: 200,
-    marginBottom: 0,
-  },
-  map: {
-    flex: 1,
-  },
+}
