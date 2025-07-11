@@ -7,7 +7,7 @@ declare module "expo-router" {
   export * from 'expo-router/build';
 
   // prettier-ignore
-  type StaticRoutes = `/` | `/(tabs)/` | `/(tabs)` | `/app/(tabs)/activity` | `/app/activity` | `/app/(tabs)/` | `/app/` | `/app/(tabs)` | `/app/(tabs)/payment` | `/app/payment` | `/app/(tabs)/profile` | `/app/profile` | `/app/login` | `/app/matching` | `/app/settings` | `/app/signup` | `/app/tracking` | `/app/verification` | `/app/welcome` | `/login` | `/profile` | `/signup` | `/tracking` | `/verification` | `/welcome`;
+  type StaticRoutes = `/` | `/(tabs)/` | `/(tabs)` | `/app/(tabs)/activity` | `/app/activity` | `/app/(tabs)/` | `/app/` | `/app/(tabs)` | `/app/(tabs)/payment` | `/app/payment` | `/app/(tabs)/profile` | `/app/profile` | `/app/login` | `/app/matching` | `/app/settings` | `/app/signup` | `/app/tracking` | `/app/verification` | `/app/welcome` | `/login` | `/profile` | `/signup` | `/verification` | `/welcome`;
   // prettier-ignore
   type DynamicRoutes<T extends string> = never;
   // prettier-ignore
