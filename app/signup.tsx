@@ -7,16 +7,17 @@
 +                <Text style={styles.titleText}>Create your account</Text>
                </LinearGradient>
 @@ .. @@
-   titleGradient: {
-     alignSelf: 'flex-start',
-     marginBottom: 12,
+  titleGradient: {
+    alignSelf: 'flex-start',
+    marginBottom: 12,
 +    padding: 2,
 +    borderRadius: 8,
-   },
+  },
 -  title: {
 +  titleText: {
-     fontSize: 32,
-     fontWeight: 'bold',
+    fontSize: 32,
+    fontWeight: 'bold',
 -    color: 'transparent',
 +    color: '#000000',
-   },
+  },
+}
