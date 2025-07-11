@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, SafeAreaView, ScrollView, TouchableOpacity, Tex
 import { LinearGradient } from 'expo-linear-gradient';
 import { MapPin, Search, Clock, Users, Star, Car, Shield, Zap } from 'lucide-react-native';
 import { router } from 'expo-router';
+import MapViewComponent from '@/components/MapView';
 
 export default function HomeScreen() {
   const [pickup, setPickup] = useState('');
@@ -146,6 +147,20 @@ export default function HomeScreen() {
               </TouchableOpacity>
             ))}
           </ScrollView>
+        </View>
+        
+        {/* Map Preview */}
+        <View style={styles.mapPreviewContainer}>
+          <Text style={styles.sectionTitle}>Nearby drivers</Text>
+          <View style={styles.mapContainer}>
+            <MapViewComponent 
+              style={styles.mapPreview}
+              driverLocation={{
+                latitude: -25.4753,
+                longitude: 30.9694
+              }}
+            />
+          </View>
         </View>
         
         {/* Ride Options */}
@@ -338,6 +353,23 @@ const styles = StyleSheet.create({
   quickDestinationDistance: {
     fontSize: 12,
     color: '#6B7280',
+  },
+  mapPreviewContainer: {
+    paddingHorizontal: 24,
+    marginBottom: 24,
+  },
+  mapContainer: {
+    height: 200,
+    borderRadius: 16,
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  mapPreview: {
+    flex: 1,
   },
   rideOptionsContainer: {
     paddingHorizontal: 24,
